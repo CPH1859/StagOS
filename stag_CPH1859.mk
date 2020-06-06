@@ -28,9 +28,17 @@ $(call inherit-product, device/oppo/CPH1859/device.mk)
 # Define first api level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2160
+TARGET_BOOT_ANIMATION_RES := 1080
+
+
+
+
 
 PRODUCT_NAME := stag_CPH1859
 PRODUCT_DEVICE := CPH1859
@@ -46,6 +54,6 @@ TARGET_VENDOR_DEVICE_NAME := CPH1859
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="CPH1859" \
     PRODUCT_NAME="CPH1859" \
-    PRIVATE_BUILD_DESC="full_oppo6771_17065-user 9 PPR1.180610.011 eng.root.20200509.060522 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200605.001 6392402 release-keys"
 
-BUILD_FINGERPRINT := "OPPO/CPH1859/CPH1859:9/PPR1.180610.011/1587903909:user/release-keys"
+BUILD_FINGERPRINT := "google/flame/flame:10/QQ2A.200501.001.A3/6353761:user/release-keys"
