@@ -30,6 +30,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Gapps
 TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := true
+TARGET_INCLUDE_LAWNCHAIR := true
 
 # Bootanimation
 TARGET_SCREEN_WIDTH := 1080
